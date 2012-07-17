@@ -1,0 +1,298 @@
+
+a {
+  text-decoration: none;
+  color: #007edf;
+  text-shadow: none;
+  font-weight: 800;
+
+  
+  -webkit-transition: color 0.5s ease;
+  -webkit-transition: text-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -ms-transition: text-shadow 0.5s ease;
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+}
+a:hover {
+  color: #0069ba;
+  text-shadow: #0090ff 0px 0px 2px;
+}
+
+
+pre {
+  width: 70%;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  overflow: auto;
+  background-color:#ffffff;
+}
+
+code {
+  background-color:#ffffff;
+  font-size: 14px;
+  padding: 3px;
+  margin: 0 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+pre code {
+  display: block;
+  box-shadow: none;
+}
+
+/*#####################---ROBA PER LA GALLERIA---#####################*/
+.ei-slider{
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	height: 600px;
+	margin: 0 auto;
+}
+.ei-slider-loading{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index:999;
+	background: rgba(0,0,0,0.9);
+	color: #fff;
+	text-align: center;
+	line-height: 400px;
+}
+.ei-slider-large{
+	height: 100%;
+	width: 100%;
+	position:relative;
+	overflow: hidden;
+}
+.ei-slider-large li{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+.ei-slider-large li img{
+	width: 100%;
+}
+.ei-title{
+	position: absolute;
+	right: 50%;
+	margin-right: 13%;
+	top: 30%;
+}
+.ei-title h2, .ei-title h3{
+	text-align: right;
+}
+.ei-title h2{
+	font-size: 40px;
+	line-height: 50px;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	color: #b5b5b5;
+}
+.ei-title h3{
+	font-size: 70px;
+	line-height: 70px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #000;
+}
+.ei-slider-thumbs{
+	height: 13px;
+	margin: 0 auto;
+	position: relative;
+}
+.ei-slider-thumbs li{
+	position: relative;
+	float: left;
+	height: 100%;
+}
+.ei-slider-thumbs li.ei-slider-element{
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	height: 100%;
+	z-index: 10;
+	text-indent: -9000px;
+	background: #000;
+	background: rgba(0,0,0,0.9);
+}
+.ei-slider-thumbs li a{
+	display: block;
+	text-indent: -9000px;
+	background: #666 ;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	-webkit-box-shadow: 
+        0px 1px 1px 0px rgba(0,0,0,0.3), 
+        0px 1px 0px 1px rgba(255,255,255,0.5);
+	-moz-box-shadow: 
+        0px 1px 1px 0px rgba(0,0,0,0.3), 
+        0px 1px 0px 1px rgba(255,255,255,0.5);
+	box-shadow: 
+        0px 1px 1px 0px rgba(0,0,0,0.3), 
+        0px 1px 0px 1px rgba(255,255,255,0.5);
+	-webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+.ei-slider-thumbs li a:hover{
+	background-color: #f0f0f0;
+}
+.ei-slider-thumbs li img{
+	position: absolute;
+	bottom: 50px;
+	opacity: 0;
+	z-index: 999;
+	max-width: 100%;
+	-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+	-webkit-box-reflect: 
+        below 0px -webkit-gradient(
+            linear, 
+            left top, 
+            left bottom, 
+            from(transparent), 
+            color-stop(50%, transparent), 
+            to(rgba(255,255,255,0.3))
+            );
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.ei-slider-thumbs li:hover img{
+	opacity: 1;
+	bottom: 13px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+@media screen and (max-width: 960px) {
+	.ei-title{
+		position: absolute;
+		right: 0px;
+		margin-right: 0px;
+		width: 100%;
+		text-align: center;
+		top: auto;
+		bottom: 10px;
+		background: #fff;
+		background: rgba(255,255,255,0.9);
+		padding: 5px 0;
+	}
+	.ei-title h2, .ei-title h3{
+		text-align: center;
+	}
+	.ei-title h2{
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.ei-title h3{
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
+
+
+#forkme_banner {
+  display: block;
+  position: absolute;
+  top:0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 15px 10px 10px;
+  color: #fff;
+  background: url(../images/menu-bg.jpg) #0090ff no-repeat 95% 50%;
+  font-weight: 800;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  
+  text-shadow: none;
+  -webkit-transition: color 0.5s ease;
+  -webkit-transition: text-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -ms-transition: text-shadow 0.5s ease;
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+}
+
+#forkme_banner:hover{
+  text-shadow: 0 0 5px rgb(155,225,85);
+  -webkit-transition: text-shadow 0.25s linear;
+  -moz-transition: text-shadow 0.25s linear;
+  -ms-transition: text-shadow 0.25s linear;
+  -o-transition: text-shadow 0.25s linear;
+  transition: text-shadow 0.25s linear;
+
+}
+
+body {
+color: #373737;
+font-size: 22px;
+font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+line-height: 1.5;
+}
+
+  h1 {
+  font-size:40px; 
+  line-height:1.2em; 
+  color:#39b9d6;
+  text-transform:uppercase;
+  }
+  
+  h2 {
+  font-size:32px; 
+  line-height:1.2em; 
+  color:#39b9d6;
+  text-transform:uppercase;
+  }
+
+  h3 {
+  font-size:32px; 
+  }
+
+  h4 {
+  font-size:28px; 
+  } 
+
+  h5 {
+  font-size:24px; 
+  }
+
+  h6 {
+  font-size:20px; 
+  } 
+
+  #IMGS {
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  border: 1px solid #AAAAAA;
+
+  box-shadow: 0 0 5px #AAAAAA;
+  -webkit-box-shadow: 0 0 5px #AAAAAA;
+  -moz-box-shadow: 0 0 5px #AAAAAA;
+  -o-box-shadow: 0 0 5px #AAAAAA;
+  -ms-box-shadow: 0 0 5px #AAAAAA;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
